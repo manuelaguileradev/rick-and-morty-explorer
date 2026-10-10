@@ -68,6 +68,7 @@ charactersGrid.addEventListener("click", (event) => {
     if (isFavorite(id)) {
       removeFavorite(id);
       favoriteButton.classList.remove("favorited");
+      if (showingFavorites) renderCharacters(getFavorites());
     } else {
       addFavorite(character);
       favoriteButton.classList.add("favorited");
@@ -80,8 +81,6 @@ charactersGrid.addEventListener("click", (event) => {
   if (!card) return;
 
   const id = Number(card.dataset.id);
-
-  console.log(id);
 
   const character = getCharacterById(id);
 

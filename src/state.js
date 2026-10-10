@@ -1,3 +1,5 @@
+import { getFavorites } from "./favorites";
+
 let nextUrl = null;
 let currentCharacters = [];
 
@@ -22,7 +24,7 @@ export function getCurrentCharacters() {
 };
 
 export function getCharacterById(id) {
-    return currentCharacters.find(char => char.id === id)
+    return currentCharacters.find(char => char.id === id) ?? getFavorites().find(fav => fav.id === id)
 };
 
 
