@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty Explorer</title>
+</head>
+
+<body>
+  <header>
+    <img src="./src/assets/logo-Bj-1heDc.png" alt="logo-rym" id="logo-hero">
+    <h1>Rick and Morty Explorer</h1>
+    <h3 id="subtitle">Search Rick & Morty characters</h3>
+  </header>
+  <main id="app">
+    <form id="search-form">
+      <input type="text" id="character-search" placeholder="Search character">
+      <select name="select-status" id="select-status">
+        <option value="">All Status</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select>
+      <button type="submit" id="character-search-button">Search</button>
+      <button id="show-favorites-button" type="button">Show Favorites</button>
+    </form>
+    <div id="characters-grid"></div>
+    <button id="load-more-button">Load More</button>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

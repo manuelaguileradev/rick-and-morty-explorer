@@ -1,0 +1,52 @@
+@use "_variables" as var;
+
+// Carga de fuentes desde Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: var.$primary-font;
+    background-image: url(./src/assets/876589.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: var.$title-font;
+    font-size: 2.2rem;
+    margin: 0.2rem 0;
+    color: var.$white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.85);
+}
+
+h2,
+h3 {
+    font-family: var.$title-font;
+    color: var.$white;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.85);
+}
+
+#subtitle {
+    font-family: var.$title-font;
+    font-size: 1.35rem;
+    margin: 0.2rem 0 0.4rem;
+    color: var.$lime;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.85);
+}
+
+
+
+
+input,
+button,
+select {
+    font-family: inherit;
+}
+
+img#logo-hero {
+    max-width: 250px;
+}
+
+article p {
+    color: var.$white;
+}
